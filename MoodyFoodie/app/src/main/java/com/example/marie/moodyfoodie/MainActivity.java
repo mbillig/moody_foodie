@@ -10,6 +10,9 @@ import android.view.Menu;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,12 +30,18 @@ public class MainActivity extends AppCompatActivity {
 //
 //    };
 
+    protected static SQLiteDatabase db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
         setupNavigationView();
+        db = openOrCreateDatabase(DatabaseContract.DATABASE_NAME, Context.MODE_PRIVATE, null);
+        db.execSQL(DatabaseContract.SQL_CREATE_DayTable);
+        db.execSQL(DatabaseContract.SQL_CREATE_MoodTable);
+        db.execSQL(DatabaseContract.SQL_CREATE_FoodTable);
     //    mTextMessage = (TextView) findViewById(R.id.message);
     //    BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     //    navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
