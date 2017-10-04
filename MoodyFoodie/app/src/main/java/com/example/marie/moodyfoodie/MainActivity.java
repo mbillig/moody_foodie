@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                //mTextMessage.setText(R.string.title_home);
-                pushFragment(new HomeFragment());
+                //mTextMessage.setText(R.string.title_log);
+                pushFragment(new LogFragment());
                 break;
             case R.id.navigation_calendar:
                 //mTextMessage.setText(R.string.title_calendar);

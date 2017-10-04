@@ -14,7 +14,7 @@
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_weight="1"
-        android:text="@string/title_home" />
+        android:text="@string/title_log" />
 
     <Button
         android:id="@+id/addFoodButton"
@@ -23,6 +23,7 @@
         android:layout_weight="1"
         android:paddingLeft="30dp"
         android:text="Add Food"
+        android:background="@color/lightLGreen"
         android:drawableLeft="@drawable/ic_silverware_black_24dp" />
 
     <Button
@@ -32,6 +33,7 @@
         android:layout_weight="1"
         android:paddingLeft="30dp"
         android:text="Add Activity"
+        android:background="@color/lightTeal"
         android:drawableLeft="@drawable/ic_group_black_24dp" />
 
     <Button
@@ -41,6 +43,7 @@
         android:layout_weight="1"
         android:paddingLeft="30dp"
         android:text="Add Mood"
+        android:background="@color/lightLBlue"
         android:drawableLeft="@drawable/ic_sentiment_satisfied_black_24dp"/>
 
     <Button
@@ -50,6 +53,7 @@
         android:layout_weight="1"
         android:paddingLeft="30dp"
         android:text="Add Note"
+        android:background="@color/lightIndigo"
         android:drawableLeft="@drawable/ic_edit_black_24dp"/>
 
 </LinearLayout>
