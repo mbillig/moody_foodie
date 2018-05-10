@@ -1,18 +1,18 @@
 package com.example.marie.moodyfoodie;
 
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.ActionBar;
-import android.view.MenuItem;
-import android.view.Menu;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.ActionBar;
+import android.view.Menu;
+import android.view.MenuItem;
+
 
 
 public class MainActivity extends AppCompatActivity {
