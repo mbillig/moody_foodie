@@ -5,9 +5,43 @@
     tools:context="com.example.marie.moodyfoodie.NotesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:padding="20dp"
+            android:lines="7"
+            android:maxLines="7"
+            android:minLines="7"
+            android:maxLength="60"
+            android:scrollHorizontally="false"
+            android:hint="What's up?"
+            android:gravity="top|left"
+            android:inputType="textMultiLine|textImeMultiLine" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Button" />
+
+    </LinearLayout>
 
 </FrameLayout>
