@@ -12,12 +12,13 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <TextView
+    <!--    <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.06"
             android:text="TextView" />
+    -->
 
         <EditText
             android:id="@+id/editText2"

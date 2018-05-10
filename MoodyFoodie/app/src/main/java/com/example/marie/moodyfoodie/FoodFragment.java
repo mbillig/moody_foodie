@@ -115,12 +115,47 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class FoodFragment extends Fragment{
+    
+    View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.food_fragment, container, false);
+        view =  inflater.inflate(R.layout.food_fragment, container, false);
+
+        Button searchButton = (Button) view.findViewById(R.id.searchFoodButton);
+        final EditText foodEditText = (EditText) view.findViewById(R.id.foodSearchEditBox);
+
+        searchButton.setOnClickListener(
+            new View.OnClickListener()
+            {
+                public void onClick(View view)
+                {
+                    System.out.println("Searching...");
+                    String foodString = foodEditText.getText().toString();
+                    System.out.println(foodString);
+                }
+            });
+        
+        return view;
     }
+
+//    @Override
+//    public void onClick(View view) {
+//
+//        switch(view.getId()) {
+//            case R.id.searchFoodButton:
+//                System.out.println("Search Clicked");
+//                EditText foodEditText = (EditText) view.findViewById(R.id.foodSearchEditBox);
+//                System.out.println(foodEditText);
+//                String foodString = foodEditText.getText().toString();
+//                System.out.println(foodString);
+//                ((MainActivity)getActivity()).pushFragment(new FoodFragment());
+//                break;
+//        }
+//    }
 }
