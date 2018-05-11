@@ -45,14 +45,16 @@
         
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Search Results:"
+            android:lines="1"
             android:layout_margin="15dp"/>
         
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/foodResults">
+            android:id="@+id/foodResultsListView"
+            >
         </ListView>
         
 
