@@ -8,9 +8,8 @@
     android:id="@+id/foodNameTextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
+    android:layout_marginLeft="@dimen/horizontal_margin"
+    android:layout_marginTop="@dimen/vertical_margin"
     android:text="food_name"
     android:textSize="20sp" />
 
@@ -19,7 +18,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/foodNameTextView"
-    android:layout_alignStart="@+id/foodNameTextView"
     android:layout_below="@+id/foodNameTextView"
     android:layout_marginTop="5dp"
     android:text="food_category"
